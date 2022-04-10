@@ -20,5 +20,5 @@ class SaleController {
     @RequestMapping(value = ["/sales/"], method = [RequestMethod.POST]) //post nao consegue ter {} na url
     fun createSale(@RequestBody sale: TravelSale)  {
         sales[sale.id] = sale
-    } //é necessario passar a anotaçao @RequestBody para avisar o springboot q o json que irá vir é um "sale"
+    } //é necessario passar a anotaçao @RequestBody para avisar o springboot q o json que irá vir é um "sale"a
 }
